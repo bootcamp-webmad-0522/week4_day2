@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+    padding: 40px;
+}
+
+img {
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+}

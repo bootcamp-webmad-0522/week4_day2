@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My first view</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Confirmación de reserva de Bootcamp</h1>
+    <p>Reserva para {{name}} {{lastName}}. Curso {{bootcamp}} en el campus de {{campus}}</p>
+
+    {{#with address}}
+    <p>Datos de residencia: calle {{street}}, {{number}}</p>
+    {{/with}}
+
+    <hr>
+
+    <h3>Detalles del Bootcamp</h3>
+
+
+    <hr>
+
+
+    <p>Materias:</p>
+    <ul>
+        {{#each subjects}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+
+
+    <p>Profesorado</p>
+    {{#if teacher}}
+    <p>Tu profesor/a será {{teacher}}</p>
+    {{else}}
+    <p>En breves te asignaremos un profe</p>
+    {{/if}}
+
+
+    <hr>
+
+
+    <p>Estado de pago</p>
+    {{#if debt}}
+    <p>Por favor, abona los {{pending}}€ restantes ASAP</p>
+    {{else}}
+    <p>Tienes todo al día</p>
+    {{/if}}
+
+
+
+    <hr>
+
+    <h3>Avisos</h3>
+    {{#unless prework}}
+    <p>Haz el Prework pero ya</p>
+    {{/unless}}
+
+
+</body>
+
+</html>

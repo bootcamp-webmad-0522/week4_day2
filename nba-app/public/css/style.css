@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 80px;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #212429;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: .6em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.player-card {
+    margin-bottom: 40px;
+}
+
+.player-card img {
+    height: 200px;
+    object-fit: cover;
+}
